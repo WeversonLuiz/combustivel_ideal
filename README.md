@@ -1,6 +1,6 @@
 # combustivel_ideal
 
-A new Flutter application.
+Dado o valor do alcool e da gasolina, o app verifica qual dos dois combustíveis é mais vantajoso na hora do abartecimento.
 
 ## Getting Started
 
