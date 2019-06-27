@@ -18,7 +18,7 @@ class _PostoListPageState extends State<PostoListPage> {
   Widget buildAppBar(){
     return AppBar(
       title: Text("Postos de Combustíveis"),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.redAccent,
       centerTitle: true,
     );
   }
@@ -43,7 +43,7 @@ class _PostoListPageState extends State<PostoListPage> {
   Widget buildFloatingActionbutton() {
     return FloatingActionButton(
       child: Icon(Icons.add),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.redAccent,
       onPressed: (){
         _showPostoPage();
       },

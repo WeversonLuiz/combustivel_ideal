@@ -95,7 +95,7 @@ class _PostoPageState extends State<PostoPage> {
   Widget buildAppBar(){
     return AppBar(
       title: Text(_postoTemp.nome ?? "Novo Posto"),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.redAccent,
       centerTitle: true,
       actions: <Widget>[
         IconButton(
@@ -111,7 +111,7 @@ class _PostoPageState extends State<PostoPage> {
   Widget buildFloatingActionbutton() {
     return FloatingActionButton(
       child: Icon(Icons.save),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.redAccent,
       onPressed: () {
         calcularCombustivel();
       },
