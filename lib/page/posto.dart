@@ -113,9 +113,18 @@ class _PostoPageState extends State<PostoPage> {
       child: Icon(Icons.save),
       backgroundColor: Colors.redAccent,
       onPressed: () {
-        calcularCombustivel();
+        if (isCamposPreenchidos(_postoTemp)) {
+          calcularCombustivel();
+        }else{
+
+        }
+
       },
     );
+  }
+
+  bool isCamposPreenchidos(Posto _postoTemp) {
+    return !_postoTemp.nome.isEmpty;
   }
 
   Widget buildContainerImagem() {

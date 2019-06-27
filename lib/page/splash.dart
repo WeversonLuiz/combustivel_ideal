@@ -18,34 +18,21 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-//    Container nome = Container(
-//        margin: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
-//        child: Text("EDMM COMBUSTÍVEL",
-//          style: TextStyle(fontSize: 30.0, color: Colors.green),));
-
-    return Scaffold(
-      body: Container(
-//                  margin:EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0) ,
-//                  child: Text("EDMM COMBUSTÍVEL",
-//                      style: TextStyle(fontSize: 30.0, color: Color(0xFF00b402)
-//                      ),
-//                  ),
-
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
+    return
+      Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
             Container(
-              width: 140,
-              height: 140,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/images/gas.png")),
-              ),
+                  image: AssetImage("assets/images/gas.png")
+                ),
+              )
             ),
-          ],
-        ),
-      ),
+         ],
+      )
     );
   }
 }
