@@ -61,26 +61,6 @@ class _PostoPageState extends State<PostoPage> {
     mensagemUsuario();
   }
 
- /* mensagemUsuario() {
-    AlertDialog result = AlertDialog(
-      title: Text("Atenção!"),
-      content: Text("Para o abastecimento $combustivel é mais vantajoso!"),
-      actions: <Widget>[
-        FlatButton(
-          child: Center(
-              child: Text(
-                "OK",
-                style: TextStyle(fontSize: 18.0),
-              )),
-          onPressed: () {
-            salvarPosto(_postoTemp);
-            Navigator.pop(context);
-            _resetFields();
-          },
-        ),
-      ],
-    );
-  }*/
 
   Future<void> mensagemUsuario() {
     return showDialog<void>(

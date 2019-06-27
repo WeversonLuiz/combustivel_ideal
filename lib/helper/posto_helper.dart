@@ -35,8 +35,8 @@ class PostoHelper {
         "c_id INTEGER PRIMARY KEY,"
         "c_nome TEXT,"
         "c_precoAlcool REAL,"
-        "c_precoGasolina REAL, "
-        "c_instante REAL)";
+        "c_precoGasolina REAL)";
+        //"c_instante REAL)";
 
     return openDatabase(
         pathDB,
@@ -58,7 +58,7 @@ class PostoHelper {
     List<Map> maps = await dbPosto.query(
         "posto",
         columns: [
-          "c_id", "c_nome", "c_precoAlcool", "c_precoGasolina", "c_instante"
+          "c_id", "c_nome", "c_precoAlcool", "c_precoGasolina"//, "c_instante"
         ],
         where: "c_id = ?",
         whereArgs: [id]

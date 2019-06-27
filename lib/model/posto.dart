@@ -6,14 +6,14 @@ class Posto {
   String nome;
   double precoAlcool;
   double precoGasolina;
-  DateTime instante = DateTime.now();
+  //DateTime instante = DateTime.now();
 
   Posto.fromMap(Map map){
     id             = map["c_id"];
     nome           = map["c_nome"];
     precoAlcool    = map["c_precoAlcool"];
     precoGasolina  = map["c_precoGasolina"];
-    instante       = map["c_instante"];
+    //instante       = map["c_instante"];
     //instante       = DateTime.parse(map["c_instante"]);
   }
 
@@ -23,9 +23,9 @@ class Posto {
     Map<String, dynamic> map = {
       "c_nome": nome,
       "c_precoAlcool": precoAlcool,
-      "c_precoGasolina": precoGasolina,
+      "c_precoGasolina": precoGasolina
       //"c_instante": instante
-      "c_instante": new DateFormat("dd-MM-yyyy").format(instante)
+      //"c_instante": new DateFormat("dd-MM-yyyy").format(instante)
     };
     if (id != null ) {
       map["c_id"] = id;
@@ -38,8 +38,8 @@ class Posto {
     return "Posto[ id: $id, "
         "nome: $nome, "
         "precoAlcool: $precoAlcool, "
-        "precoGasolina: $precoGasolina, "
-        "instante: $instante "
+        "precoGasolina: $precoGasolina "
+       // "instante: $instante "
         "]";
   }
 }
